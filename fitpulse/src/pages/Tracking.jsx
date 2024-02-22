@@ -1,9 +1,11 @@
-import Navbar from "./pages/Navbar.jsx";
 
-export default function App() {
+export default function Tracking() {
     
     return (
-        < Navbar/>
+        <>
+            <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+            <h1>Tracking Page</h1>
+        </>
     )
 
 }
