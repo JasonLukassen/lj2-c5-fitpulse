@@ -1,10 +1,9 @@
-
 export default function Login() {
-
-    return(
-        <>
-            <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-            <h1>Login Page</h1>
-        </>
-    )
+  return (
+    <>
+      <h1 className=" font-poppins text-white text-5xl text-center pt-10 font-semibold">
+        Sign In.
+      </h1>
+    </>
+  );
 }

@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../assets/fitpulse.svg"
+import Logo from "../assets/fitpulse.svg";
 
 export default function Navbar() {
   return (
@@ -20,16 +20,14 @@ export default function Navbar() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-
           </div>
-            
         </ul>
-          <div className="flex pr-10">
-            <Link to="/login">Login</Link>
-          </div>
+        <div className="flex pr-10">
+          <Link to="/login">Login</Link>
+        </div>
       </nav>
 
       <Outlet />
     </>
-  )
+  );
 }
