@@ -5,6 +5,7 @@ import Tracking from "./pages/Tracking/Tracking";
 import Contact from "./pages/Contact/Contact";
 import Login from "./pages/AccountHandling/Login";
 import NoPage from "./pages/NoPage/NoPage";
+import Register from "./pages/AccountHandling/Register";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="tracking" element={<Tracking />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
