@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home/Home";
 import Tracking from "./pages/Tracking/Tracking";
 import Contact from "./pages/Contact/Contact";
-import Login from "./pages/Login/Login";
+import Login from "./pages/AccountHandling/Login";
 import NoPage from "./pages/NoPage/NoPage";
 
 export default function App() {
