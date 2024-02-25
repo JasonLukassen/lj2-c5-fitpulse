@@ -34,6 +34,9 @@ export default function Navbar() {
           <li className="w-max">
             <Link to="/contact" className="hover:text-gold mx-10">Contact</Link>
           </li>
+          <li className="w-max">
+            <Link to="/dashboard" className="hover:text-gold mx-10">Dashboard</Link>
+          </li>
         </ul>
 
         {/* Login Button (always visible) */}
