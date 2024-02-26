@@ -11,3 +11,20 @@ body::-webkit-scrollbar {
     display: none;
   }
   
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: orange;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.animate-color-change {
+    animation: colorChange 4s infinite;
+}
