@@ -4,7 +4,7 @@ export default function Home() {
 
     return (
         <>
-            <main className="box-border w-full h-screen p-0 m-0 text-white">
+            <main className="box-border w-full h-screen p-0 m-0 text-white font-poppins">
 
                 {/* Hero Section */}
                 <section id="welcome-section" className="flex h-screen justify-center items-center">
@@ -17,7 +17,7 @@ export default function Home() {
                                 <p className='text-white max-w-xl md:w-full'>Embrace the challenge at FitPulse and propel yourself to the next level of fitness. Track and plan your workouts effortlessly, breaking through limits with our empowering platform. Join a community dedicated to achieving excellence – where limits are merely stepping stones to your fitness success.</p>
                             </div>
                         </div>
-                        <div className='flex justify-center align-center'>
+                        <div className='flex justify-center items-center'>
                             <div className='w-full md:w-3/4 h-[20vh] text-center space-x-4 '>
                                 <a href="#learn-more"><button className='w-1/3 max-w-xl md-w-1/4  h-20 bg-none border-2 border-solid border-white uppercase text-white font-bold text-2xl'>Learn More</button></a>
                                 <a href="#payment"><button className='w-1/3 max-w-xl md-w-1/4 h-20 bg-gold border-2 border-solid border-gold uppercase text-white font-bold text-2xl'>Join now</button></a>
@@ -28,13 +28,13 @@ export default function Home() {
 
                 {/* Features Section */}
                 <section className="box-border w-full h-[75vh] border-solid border-b-2 border-red-500" id="learn-more">
-                    <div className='flex flex-row align-center'>
-                    <h1>Features</h1>
+                    <div className='flex justify-center pt-[10vh]'>
+                        <h1 className='text-2xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid pb-5'>Features</h1>
                     </div>
                 </section>
 
                 <section className="box-border w-full h-[75vh] border-solid border-2 border-blue-500" id='payment'>
-                    <h1>Pricing</h1>
+                    <h1 className=''>Pricing</h1>
                 </section>
 
                 <section className=" box-border w-full h-[75vh] border-solid border-2 border-green-500">
