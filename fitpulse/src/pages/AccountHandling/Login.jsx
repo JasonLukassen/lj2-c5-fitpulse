@@ -10,7 +10,7 @@ export default function Login() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-      <h1 className="font-poppins text-white text-3xl md:text-5xl text-center pt-24 md:pt-96 font-semibold">
+      <h1 className="font-poppins text-white text-3xl md:text-5xl text-center pt-24 md:pt-32 font-semibold">
         Sign In.
       </h1>
 
