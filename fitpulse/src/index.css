@@ -7,3 +7,20 @@ body {
     background-color: #1B1B1B;
 }
 
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: orange;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.animate-color-change {
+    animation: colorChange 4s infinite;
+}
