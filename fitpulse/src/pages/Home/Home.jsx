@@ -1,6 +1,31 @@
 import backgroundImage from '../../assets/images/background-image.png'
+import JasonPfp from '../../assets/images/jason.png'
+import DiegoPfp from '../../assets/images/diego.png'
+import CaioPfp from '../../assets/images/caio.png'
 
 export default function Home() {
+
+    let review1 = {
+        img: {JasonPfp},
+        name: "Jason Lukassen",
+        comment: "The best fitness app I've used, track your workouts with just a single click. ",
+        rating: 4,
+    };
+
+    let review2 = {
+        img: {DiegoPfp},
+        name: "Diego Loomans",
+        comment: "Amazing app! Everything I look for is in there! ",
+        rating: 4,
+    };
+
+    let review3 = {
+        img: {CaioPfp},
+        name: "Caio Goessens",
+        comment: "The best fitness app I've used, track your workouts with just a single click. ",
+        rating: 4,
+    };
+
 
     return (
         <>
@@ -19,8 +44,8 @@ export default function Home() {
                         </div>
                         <div className='flex justify-center items-center'>
                             <div className='w-full md:w-3/4 h-[20vh] text-center space-x-4 '>
-                                <a href="#learn-more"><button className='w-1/3 md-w-1/4  h-20 bg-none border-2 border-solid border-white uppercase text-white font-bold text-2xl'>Learn More</button></a>
-                                <a href="#payment"><button className='w-1/3 md-w-1/4 h-20 bg-gold border-2 border-solid border-gold uppercase text-white font-bold text-2xl'>Join now</button></a>
+                                <a data-te-smooth-scroll-init href="#learn-more"><button className='w-1/3 md-w-1/4  h-20 bg-none border-2 border-solid border-white uppercase text-white font-bold text-2xl'>Learn More</button></a>
+                                <a data-te-smooth-scroll-init href="#payment"><button className='w-1/3 md-w-1/4 h-20 bg-gold border-2 border-solid border-gold uppercase text-white font-bold text-2xl'>Join now</button></a>
                             </div>
                         </div>
                     </div>
@@ -31,19 +56,31 @@ export default function Home() {
                     <div className='flex justify-center pt-[10vh]'>
                         <h1 className='text-2xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid pb-5'>Features</h1>
                     </div>
-                    <h1>Features</h1>
+                    <div className='pt'>
+                        <h1>Features</h1>
+                    </div>
                 </section>
 
                 <section className="box-border w-full h-[75vh] border-solid border-2 border-blue-500" id='payment'>
+                    <div className='flex justify-center pt-[10vh]'>
+                        <h1 className='text-2xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid pb-5'>Pricing</h1>
+                    </div>
                     <h1 className=''>Pricing</h1>
                 </section>
 
                 <section className=" box-border w-full h-[75vh] border-solid border-2 border-green-500">
+                    <div className='flex justify-center pt-[10vh]'>
+                        <h1 className='text-2xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid pb-5'>What our clients say</h1>
+                    </div>
                     <h1>What our clients say</h1>
                 </section>
 
-                <footer className="box-border w-full h-[75vh] border-solid border-2 border-white-500">
+                {/* Footer */}
+                <footer className="box-border w-full h-[25vh] border-solid border-2 border-white-500 bg-blue-charcoal">
+                    <div className='flex justify-center'>
                     <h1>Footer</h1>
+                    </div>
+                    <p>&copy; @FitPulse</p>
                 </footer>
 
 
