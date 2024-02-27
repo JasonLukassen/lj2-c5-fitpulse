@@ -1,10 +1,14 @@
 
 export default function App() {
-    
+
     return (
         <>
-            <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
             <h1>Contact Page</h1>
+
+            <div>
+                <h1 className=" text-white font-poppins text-center text-4xl mt-[25vh]">Contact Us</h1>
+                <h3 className=" text-gray-500 font-poppins text-center text-lg leading-loose">Any question or remarks? Just write us a message!</h3>
+            </div>
         </>
     )
 

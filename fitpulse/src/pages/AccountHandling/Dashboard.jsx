@@ -9,7 +9,7 @@ export default function accountDashboard() {
                 <img src={avatarIcon} alt="" className='absolute left-8 w-14 h-14 top-10 ' />
                 <h1 className="font-poppins text-white font-semibold">Diego Loomans</h1>
                 <h2 className="font-poppins text-gray-400 text-center">
-                    <img src={locationIcon} alt="" className='hidden 2xl:block absolute left-24' />Maastricht, The Netherlands
+                    <img src={locationIcon} alt="" className='absolute left-24' />Maastricht, The Netherlands
                 </h2>
             </div>
         </div>
