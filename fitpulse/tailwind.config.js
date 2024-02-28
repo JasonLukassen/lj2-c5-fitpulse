@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         'gold': '#DFA100',
+        'contact': '#212121',
         'blue-charcoal': '#22262A',
       }
     },

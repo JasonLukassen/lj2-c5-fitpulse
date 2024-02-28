@@ -6,21 +6,21 @@ import CaioPfp from '../../assets/images/caio.png'
 export default function Home() {
 
     let review1 = {
-        img: {JasonPfp},
+        img: { JasonPfp },
         name: "Jason Lukassen",
         comment: "The best fitness app I've used, track your workouts with just a single click. ",
         rating: 4,
     };
 
     let review2 = {
-        img: {DiegoPfp},
+        img: { DiegoPfp },
         name: "Diego Loomans",
         comment: "Amazing app! Everything I look for is in there! ",
         rating: 4,
     };
 
     let review3 = {
-        img: {CaioPfp},
+        img: { CaioPfp },
         name: "Caio Goessens",
         comment: "The best fitness app I've used, track your workouts with just a single click. ",
         rating: 4,
@@ -33,7 +33,7 @@ export default function Home() {
 
                 {/* Hero Section */}
                 <section id="welcome-section" className="flex h-screen justify-center items-center">
-                    <div className="bg-cover bg-center w-full h-screen" style={{backgroundImage: `url(${backgroundImage})`}} >
+                    <div className="bg-cover bg-center w-full h-screen" style={{ backgroundImage: `url(${backgroundImage})` }} >
                         <div className="w-full h-[60vh] flex justify-center items-center">
                             <h1 className="text-white font-bold lg:text-6xl lg:leading-snug md:text-4xl sm:text-3xl text-2xl w-1/3 text-center uppercase">Reach your <span className='text-gold'>limits</span> and get to the <span className='text-gold'>next</span> level</h1>
                         </div>
@@ -78,7 +78,7 @@ export default function Home() {
                 {/* Footer */}
                 <footer className="box-border w-full h-[25vh] border-solid border-2 border-white-500 bg-blue-charcoal">
                     <div className='flex justify-center'>
-                    <h1>Footer</h1>
+                        <h1>Footer</h1>
                     </div>
                     <p>&copy; @FitPulse</p>
                 </footer>

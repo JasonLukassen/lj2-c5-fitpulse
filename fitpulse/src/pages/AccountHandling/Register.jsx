@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import { Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import greyCircle from "../../assets/images/circlegrey.png";
 import orangeCircle from "../../assets/images/circleorange.png";
@@ -12,18 +13,19 @@ export default function Register() {
     const [password, setPassword] = useState("");
 
     const notify = () => {
-        toast.warn('Je kan momenteel geen accounts aanmaken!', {
+        toast.error('Je kan momenteel geen accounts aanmaken!', {
             position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
-            pauseOnHover: false,
+            pauseOnHover: true,
             draggable: true,
             progress: undefined,
             theme: "dark",
-            transition: 'Bounce',
+            transition: Bounce,
         });
     };
+
 
     return (
         <>
