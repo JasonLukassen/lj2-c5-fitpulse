@@ -9,8 +9,8 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
-  }
-  
+}
+
 @keyframes colorChange {
     0% {
         color: white;
