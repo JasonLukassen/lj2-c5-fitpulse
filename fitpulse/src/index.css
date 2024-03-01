@@ -28,3 +28,7 @@ body::-webkit-scrollbar {
 .animate-color-change {
     animation: colorChange 4s infinite;
 }
+
+input[type="radio"]:checked + label > span > span {
+    opacity: 1;
+}
