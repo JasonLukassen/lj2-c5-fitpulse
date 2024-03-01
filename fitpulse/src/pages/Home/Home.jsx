@@ -1,30 +1,23 @@
 import backgroundImage from '../../assets/images/background-image.png'
-import JasonPfp from '../../assets/images/jason.png'
-import DiegoPfp from '../../assets/images/diego.png'
-import CaioPfp from '../../assets/images/caio.png'
+import mobileAndWebSupport from '../../assets/support.svg';
+import trackAndPlan from '../../assets/track.svg';
+import personalizedTraining from '../../assets/personalized.svg';
+import Features from './components/Features';
+// import JasonPfp from '../../assets/images/jason.png'
+// import DiegoPfp from '../../assets/images/diego.png'
+// import CaioPfp from '../../assets/images/caio.png'
 
 export default function Home() {
 
-    let review1 = {
-        img: { JasonPfp },
-        name: "Jason Lukassen",
-        comment: "The best fitness app I've used, track your workouts with just a single click. ",
-        rating: 4,
-    };
+    const tempTitleOne = "Mobile & Web Support";
+    const tempTitleTwo = "Track & Plan Workouts";
+    const tempTitleThree = "Personalized Training Programs";
 
-    let review2 = {
-        img: { DiegoPfp },
-        name: "Diego Loomans",
-        comment: "Amazing app! Everything I look for is in there! ",
-        rating: 4,
-    };
+    const tempParOne = "Experience unparalleled versatility with our project that seamlessly caters to both app and desktop users. From a user-friendly mobile app offering on-the-go fitness tracking to a robust desktop interface providing in-depth planning, we stand out as the best, ensuring a comprehensive fitness experience tailored to your lifestyle.";
+    const tempParTwo = "Elevate your fitness journey with our intuitive 'Plan and Track' feature, empowering users to meticulously design and monitor workouts effortlessly. Whether strategizing your regimen or logging progress, our platform excels in simplifying the planning and tracking process, making your fitness goals a tangible reality";
+    const tempParThree = "Revolutionize your fitness journey with our 'Personalized Training Plans' feature. Tailored to your unique goals and preferences, our platform offers a seamless experience, empowering you to effortlessly manage and modify your personalized training plans for optimal results.";
 
-    let review3 = {
-        img: { CaioPfp },
-        name: "Caio Goessens",
-        comment: "The best fitness app I've used, track your workouts with just a single click. ",
-        rating: 4,
-    };
+
 
 
     return (
@@ -52,12 +45,16 @@ export default function Home() {
                 </section>
 
                 {/* Features Section */}
-                <section className="box-border w-full h-[75vh] border-solid border-b-2 border-red-500" id="learn-more">
-                    <div className='flex justify-center pt-[10vh]'>
-                        <h1 className='text-2xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid pb-5'>Features</h1>
+                <section className="box-border w-full  border-solid border-b-2 border-red-500" id="learn-more">
+                    <div className='flex justify-center h-[20vh] pt-[10vh]'>
+                        <h1 className='text-3xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid'>Features</h1>
                     </div>
-                    <div className='pt'>
-                        <h1>Features</h1>
+                    <div className=''>
+                        <div className='w-full h-[55vh] flex justify-around flex-wrap pt-[5vh]'>
+                            <Features images={mobileAndWebSupport} title={tempTitleOne} par={tempParOne}/>
+                            <Features images={trackAndPlan} title={tempTitleTwo} par={tempParTwo}/>
+                            <Features images={personalizedTraining} title={tempTitleThree} par={tempParThree}/>
+                        </div>
                     </div>
                 </section>
 
@@ -80,7 +77,7 @@ export default function Home() {
                     <div className='flex justify-center'>
                         <h1>Footer</h1>
                     </div>
-                    <p>&copy; @FitPulse</p>
+                    <p>&copy; FitPulse</p>
                 </footer>
 
 
