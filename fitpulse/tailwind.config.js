@@ -9,6 +9,7 @@ export default {
       colors: {
         gold: "#DFA100",
         contact: "#212121",
+        pricing: "#1E1E1E",
         "dark-contact": "#1A1A1A",
         "blue-charcoal": "#22262A",
       },
