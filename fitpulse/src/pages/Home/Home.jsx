@@ -45,12 +45,12 @@ export default function Home() {
                 </section>
 
                 {/* Features Section */}
-                <section className="box-border w-full h-[75vh] border-solid border-b-2 border-red-500" id="learn-more">
+                <section className="box-border w-full  border-solid border-b-2 border-red-500" id="learn-more">
                     <div className='flex justify-center h-[20vh] pt-[10vh]'>
                         <h1 className='text-3xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid'>Features</h1>
                     </div>
                     <div className=''>
-                        <div className='w-full h-[55vh]'>
+                        <div className='w-full h-[55vh] flex justify-around flex-wrap pt-[5vh]'>
                             <Features images={mobileAndWebSupport} title={tempTitleOne} par={tempParOne}/>
                             <Features images={trackAndPlan} title={tempTitleTwo} par={tempParTwo}/>
                             <Features images={personalizedTraining} title={tempTitleThree} par={tempParThree}/>
