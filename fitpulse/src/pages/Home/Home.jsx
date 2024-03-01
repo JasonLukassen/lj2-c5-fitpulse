@@ -3,6 +3,7 @@ import mobileAndWebSupport from '../../assets/support.svg';
 import trackAndPlan from '../../assets/track.svg';
 import personalizedTraining from '../../assets/personalized.svg';
 import Features from './components/Features';
+import Pricing from './components/Pricing';
 // import JasonPfp from '../../assets/images/jason.png'
 // import DiegoPfp from '../../assets/images/diego.png'
 // import CaioPfp from '../../assets/images/caio.png'
@@ -17,8 +18,36 @@ export default function Home() {
     const tempParTwo = "Elevate your fitness journey with our intuitive 'Plan and Track' feature, empowering users to meticulously design and monitor workouts effortlessly. Whether strategizing your regimen or logging progress, our platform excels in simplifying the planning and tracking process, making your fitness goals a tangible reality";
     const tempParThree = "Revolutionize your fitness journey with our 'Personalized Training Plans' feature. Tailored to your unique goals and preferences, our platform offers a seamless experience, empowering you to effortlessly manage and modify your personalized training plans for optimal results.";
 
-
-
+    const pricingCard1 = {
+        title: "Basic",
+        price: 4.99,
+        features: {
+            one: "Create personal dashboard",
+            two: "Organize your notes and workflows",
+            three: "5GB of space",
+        },
+        bestDeal: false,
+    }
+    const pricingCard2 = {
+        title: "Plus",
+        price: 14.99,
+        features: {
+            one: "All features from the Basic plan",
+            two: "Unlock teams to create a work group",
+            three: "20GB of shared space",
+        },
+        bestDeal: true,
+    }
+    const pricingCard3 = {
+        title: "Pro",
+        price: 24.99,
+        features: {
+            one: "All features from the Plus plan",
+            two: "Unlock database to manage your data",
+            three: "200GB / 5 shared space",
+        },
+        bestDeal: false,
+    }
 
     return (
         <>
@@ -45,12 +74,12 @@ export default function Home() {
                 </section>
 
                 {/* Features Section */}
-                <section className="box-border w-full  border-solid border-b-2 border-red-500" id="learn-more">
+                <section className="box-border w-full  border-solid border-b-2 border-red-500 pb-10" id="learn-more">
                     <div className='flex justify-center h-[20vh] pt-[10vh]'>
                         <h1 className='text-3xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid'>Features</h1>
                     </div>
-                    <div className=''>
-                        <div className='w-full h-[55vh] flex justify-around flex-wrap pt-[5vh]'>
+                    <div className='pt-'>
+                        <div className='w-full h-[55vh] flex justify-around flex-wrap py-[5vh]'>
                             <Features images={mobileAndWebSupport} title={tempTitleOne} par={tempParOne}/>
                             <Features images={trackAndPlan} title={tempTitleTwo} par={tempParTwo}/>
                             <Features images={personalizedTraining} title={tempTitleThree} par={tempParThree}/>
@@ -58,11 +87,17 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="box-border w-full h-[75vh] border-solid border-2 border-blue-500" id='payment'>
+                <section className="box-border w-full  border-solid border-2 border-blue-500 pb-10" id='payment'>
                     <div className='flex justify-center pt-[10vh]'>
-                        <h1 className='text-2xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid pb-5'>Pricing</h1>
+                        <h1 className='text-3xl sm:text-4xl md:text-6xl 3xl:text-8xl border-b-2 border-gold border-solid'>Pricing</h1>
                     </div>
-                    <h1 className=''>Pricing</h1>
+                    <div>
+                        <div className="w-full flex justify-center space-x-20 pt-[10vh] pb-10">
+                            <Pricing info={pricingCard1}/>
+                            <Pricing info={pricingCard2}/>
+                            <Pricing info={pricingCard3}/>
+                        </div>
+                    </div>
                 </section>
 
                 <section className=" box-border w-full h-[75vh] border-solid border-2 border-green-500">

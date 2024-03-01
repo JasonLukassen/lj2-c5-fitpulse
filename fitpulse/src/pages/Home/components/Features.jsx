@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export default function Features( { images, title, par } ) {
 
     return (
-        <div className="w-1/4 text-center space-y-5 min-w-44">
+        <div className="w-1/4 text-center space-y-5">
             <div id="img" className='flex justify-center pt-[5vh]'>
                 <img src={images} alt="responsiveness img" />
             </div>
