@@ -33,6 +33,7 @@ export default function Register() {
             <ToastContainer
                 position="bottom-right"
                 autoClose={5000}
+                limit={1}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick

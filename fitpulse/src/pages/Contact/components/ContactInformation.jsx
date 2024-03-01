@@ -1,11 +1,50 @@
+import 'react-toastify/dist/ReactToastify.css';
+import { Slide } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import phoneIcon from '../../../assets/phone.svg'
 import mailIcon from '../../../assets/email.svg'
 import locationIcon from '../../../assets/company.svg'
 
+import socialInstaIcon from '../../../assets/instagram.svg'
+import socialFacebookIcon from '../../../assets/fb.svg'
+import socialTwitterIcon from '../../../assets/twitter.svg'
+
+
+import sendLetter from '../../../assets/contact_letter.svg'
+
 
 export default function ContactInformation() {
+
+    const notify = () => {
+        toast.success('Your message has been submitted!', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: 1,
+            theme: "dark",
+            transition: Slide,
+        });
+    };
     return (
         <>
+
+            <ToastContainer
+            position='bottom-right'
+            autoClose={5000}
+            limit={1}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition={Slide}
+            />
 
             <h1 className=" text-transparent">Contact Page</h1>
 
@@ -34,6 +73,12 @@ export default function ContactInformation() {
                     <div className=' inline-block flex ml-14 mt-10'>
                         <img src={locationIcon} alt="locationIcon" />
                         <h3 className=' text-white font-poppins text-lg ml-3'>Maastricht, The Netherlands.</h3>
+                    </div>
+
+                    <div className='flex items-center gap-11 mt-96 ml-14'>
+                        <button><img src={socialFacebookIcon} alt="Facebook" className='w-6 h-6 animate-bounce' /></button>
+                        <button><img src={socialInstaIcon} alt="Instagram" className='w-6 h-6 animate-bounce' /></button>
+                        <button><img src={socialTwitterIcon} alt="Facebook" className='w-6 h-6 animate-bounce' /></button>
                     </div>
                 </div>
                 <div className="min-h-screen ml-16 mt-[40vh]">
@@ -99,6 +144,11 @@ export default function ContactInformation() {
                         <div className="col-span-2 -mt-1">
                             <label htmlFor="message" className='text-amber-400 font-poppins text-lg mb-1 font-semibold'>Message</label>
                             <input type="text" name="message" placeholder="Message" className="block w-[42vw] py-2.5 px-0 text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none" />
+                        </div>
+
+                        <div>
+                            <button className=' text-white font-poppins text-xl ml-40 hover:text-green-400' onClick={notify}>Send Message</button>
+                            <img src={sendLetter} alt="" />
                         </div>
 
                     </div>
